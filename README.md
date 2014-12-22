@@ -3,6 +3,10 @@ Facies
 
 Facies is an Android application, a project of Mahidol U's EGCO486 Image Processing, for swaping faces.
 
+Download APK
+------
+<a href="https://github.com/oakraw/Facies/blob/master/app/app-release.apk?raw=true">apk file</a>
+
 
 Main Feature
 ------
