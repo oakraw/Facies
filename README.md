@@ -28,4 +28,4 @@ How to Use
 6. When finish all funs, use the forth button to save image to your phone storage. Share button will appear when finish saving
 
 
-This project was the work of fews people and was done in four days. It is not perfect as claimed :P
+*This project was the work of fews people and was done in four days. It is not perfect as claimed :P*
