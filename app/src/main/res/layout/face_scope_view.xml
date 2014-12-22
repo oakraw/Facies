@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+        >
+    <View android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <ImageView
+            android:id="@+id/view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|left"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:src="@drawable/face_template"
+            android:background="@drawable/face_area"
+            android:focusable="true"/>
+    />
+    <ImageView
+            android:id="@+id/push_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|left"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/resizeicon"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:focusableInTouchMode="true"
+            />
+
+    <ImageView
+        android:id="@+id/del_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|left"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/deleteicon"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:visibility="invisible"
+        android:focusableInTouchMode="true"
+        />
+</FrameLayout>

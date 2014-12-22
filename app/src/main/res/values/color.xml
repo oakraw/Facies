@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#C62828</color>
+    <color name="status_color">#B71C1C</color>
+    <color name="accent">#48c61f21</color>
+    <color name="gray">#8b8b8b</color>
+    <color name="gray_trans">#ff9c9c9c</color>
+
+    <color name="fab_color">@android:color/white</color>
+    <color name="fab_color_press">@color/gray</color>
+    <color name="fab_color_ripple">#ffdddddd</color>
+
+</resources>

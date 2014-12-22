@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/img_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg"
+        android:layout_gravity="center"
+        />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/preview_selected"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="top|left"
+            android:layout_margin="20dp"
+            android:scaleType="centerCrop"
+            app:border_width="2dp"
+            android:visibility="invisible"
+            app:border_color="#FFF"/>
+
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/done_btn"
+            android:layout_margin="20dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:visibility="invisible"
+            android:src="@drawable/check_ic"
+            fab:fab_type="normal"
+            android:layout_gravity="top|right"
+            android:scaleType="centerInside"
+            fab:fab_colorNormal="@color/fab_color"
+            fab:fab_colorPressed="@color/fab_color_press"
+            fab:fab_colorRipple="@color/fab_color_ripple"
+            />
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/cancel_btn"
+            android:layout_margin="20dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:visibility="invisible"
+            android:src="@drawable/cancel_ic"
+            fab:fab_type="normal"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            fab:fab_colorNormal="@color/fab_color"
+            fab:fab_colorPressed="@color/fab_color_press"
+            fab:fab_colorRipple="@color/fab_color_ripple"
+            />
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/share_btn"
+            android:layout_margin="20dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:visibility="invisible"
+            android:src="@drawable/share_ic"
+            fab:fab_type="normal"
+            android:layout_gravity="bottom|right"
+            android:scaleType="centerInside"
+            fab:fab_colorNormal="@color/fab_color"
+            fab:fab_colorPressed="@color/fab_color_press"
+            fab:fab_colorRipple="@color/fab_color_ripple"
+            />
+
+
+        <it.sephiroth.android.library.widget.HListView
+        android:id="@+id/panel"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FFF"
+        android:layout_gravity="bottom"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/customize_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/button_panel_round_corner">
+        <ImageButton
+            android:id="@+id/add_img_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_press"
+            android:src="@drawable/ic_add_to_photos_grey600_48dp"/>
+        <ImageButton
+            android:id="@+id/add_face"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_press"
+            android:src="@drawable/ic_add_face"/>
+        <ImageButton
+            android:id="@+id/remove_face"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_press"
+            android:src="@drawable/ic_remove_face"/>
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_press"
+            android:src="@drawable/ic_save"/>
+        </LinearLayout>
+</LinearLayout>
